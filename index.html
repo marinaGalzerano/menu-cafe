@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVA CAFFE</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="banner">
+      <!-- <video class="video" autoplay loop muted>
+            <source class="video" src="images/banner.mp4"> 
+        </video> -->
+
+      <div class="contenedor-textos">
+        <h1>SI HAY <strong>CÓDIGO</strong>, HAY <strong>CAFÉ<strong></h1>
+        <h2>
+          if ( cafe.isEmpty() ) { <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;servirCafe(cafe); <br />}
+        </h2>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <div
+      style="height: 150px; overflow: hidden; background-color: rgb(19, 19, 19)"
+    >
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C128.38,209.72 358.63,-28.11 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: rgb(136, 101, 45)"
+        ></path>
+      </svg>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <h2 class="text-center slogan">NUESTROS PRODUCTOS:</h2>
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <div class="contenido-menu">
+      <div class="slider">
+        <div id="carousel-cafes" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner contenedor-items-slider">
+            <div class="carousel-item active w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="capu"
+                  src="images/capu1.png"
+                  class="imagen"
+                  alt="Capuccino"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Capuccino</p>
+                <p class="precio">$ 100</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="expresso"
+                  src="images/cafeEspresso.png"
+                  class="imagen"
+                  alt="Espresso"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Espresso</p>
+                <p class="precio">$ 150</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="cafejava"
+                  src="images/cafejava.avif"
+                  class="imagen"
+                  alt="Java"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Cafe Java</p>
+                <p class="precio">$ 500</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="latte"
+                  src="images/latteMachiatto.png"
+                  class="imagen"
+                  alt="Latte"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Latte Machiatto</p>
+                <p class="precio">$ 300</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="moka"
+                  src="images/moka.webp"
+                  class="imagen"
+                  alt="Moka"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Cafe Moka</p>
+                <p class="precio">$ 200</p>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carousel-cafes"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carousel-cafes"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------------------------------------------------>
+
+      <div class="slider">
+        <div id="carousel-postres" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner contenedor-items-slider">
+            <div class="carousel-item active w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="cheesecake"
+                  src="images/cheesecake.webp"
+                  class="imagen"
+                  alt="Cheessecake"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Cheesecake</p>
+                <p class="precio">$ 500</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="medialuna"
+                  src="images/medialuna.png"
+                  class="imagen"
+                  alt="medialuna"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">2 medialunas</p>
+                <p class="precio">$ 250</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="tiramisu"
+                  src="images/tiramisu.png"
+                  class="imagen"
+                  alt="Tiramisu"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Tiramisu</p>
+                <p class="precio">$ 500</p>
+              </article>
+            </div>
+
+            <div class="carousel-item w-100 h-100">
+              <div
+                class="d-flex justify-content-center align-items-center h-75"
+              >
+                <img
+                  id="brownie"
+                  src="images/brownie.png"
+                  class="imagen"
+                  alt="Brownie"
+                />
+              </div>
+              <article class="item">
+                <p class="gusto">Brownie</p>
+                <p class="precio">$ 500</p>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carousel-postres"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carousel-postres"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+      <div style="height: 150px; overflow: hidden; background-color: rgb(19, 19, 19)">
+  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+    <path d="M0.00,49.98 C128.38,209.72 358.63,-28.11 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: rgb(136, 101, 45); transform: scale(-1, -1); transform-origin: center;"></path>
+  </svg>
+</div>
+    </div>
+  </body>
+  <footer>
+      <p>Café de especialidad - since 2023</p><br />
+      <p>Hecho con el mejor café <a href="https://en.wikipedia.org/wiki/Coffee_production_in_Indonesia#Java" target="_blank">Java</a></p>
+    </footer>
+</html>
